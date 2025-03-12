@@ -1,3 +1,5 @@
+# Integration tests for the Flask app
+
 import pytest
 import sys
 import os
@@ -17,12 +19,12 @@ def test_home_html(client):
     assert response.status_code == 200
     assert b"Welcome to the Automated Testing Demo!" in response.data  # Check if HTML contains expected text
 
-def test_generate_ascii_art_route(client):
+def test_generate_art_route(client):
     response = client.get('/generate')
     assert response.status_code == 200
     assert "ascii_art" in response.get_json()
 
-def test_generate_ascii_art_button(client):
+def test_generate_button(client):
     """Simulate what the frontend button does by making an API call"""
     response = client.get('/generate')
     assert response.status_code == 200
