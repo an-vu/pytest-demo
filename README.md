@@ -6,7 +6,7 @@ This repository demonstrates how to write and run automated tests using **`pytes
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/pytest-demo.git
+   git clone https://github.com/an-vu/pytest-demo.git
    cd pytest-demo
    ```
    
