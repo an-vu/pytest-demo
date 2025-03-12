@@ -9,4 +9,4 @@ from art import get_art
 def test_generate_ascii_art():
     art = get_art()
     assert isinstance(art, str)  # Ensure output is a string
-    assert len(art.strip()) > 0  # Check if it contains a key part of the ASCII
+    assert len(art.strip()) > 0  # Check to make sure art is not empty
