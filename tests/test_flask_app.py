@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Integration tests for the Flask app
 
 import pytest
