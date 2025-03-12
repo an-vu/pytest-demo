@@ -14,7 +14,7 @@ def client():
     with app.test_client() as client:
         yield client
 
-def test_home(client):
-    response = client.get('/')  
+def test_home_html(client):
+    response = client.get('/')
     assert response.status_code == 200
-    assert response.get_json() == {"message": "Hello, World!"}
+    assert b"Welcome to the Automated Testing Demo!" in response.data  # Check if HTML contains expected text
