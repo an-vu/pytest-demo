@@ -12,30 +12,20 @@ This repository demonstrates how to write and run automated tests using **`pytes
    
 2. Create and activate a virtual environment:
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    source venv/bin/activate  # Mac/Linux
    venv\Scripts\activate  # Windows
    ```
    
 3. Install dependencies:
    ```bash
-   pip install pytest
+   python3 -m install pytest
    ```
 
 ## Running Tests
 
 Run tests with:
 ```bash
-pytest
+pytest -v
 ```
 
-## Example Test
-
-Below is an example test case from this repo:
-
-```python
-from app.calculator import add
-
-def test_add():
-    assert add(2, 3) == 5
-```
