@@ -1,4 +1,4 @@
-# Automated Testing Tool Demo Using pytest.
+# Automated Testing Tool Demo Using `pytest`
 
 This repository demonstrates how to write and run automated tests using **`pytest`** in Python.
 
